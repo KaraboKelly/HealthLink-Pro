@@ -1,0 +1,89 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: 100vh;
+}
+
+.App-header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+}
+/**************USERREGISTRATION***********/
+.sign-in-sign-up-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.sign-form {
+  display: flex;
+  width: 600px; /* Adjust the width as needed */
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-part,
+.sign-up-part {
+  flex: 1;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sign-up-part {
+  background-color: #87ceeb;
+  color: #fff;
+}
+
+.slide-button {
+  cursor: pointer;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.slide-button:hover {
+  background-color: #ddd;
+}
+/********patient page nav bar****/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80px;
+  padding: 0 20px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  margin-right: auto;
+}
+
+.icon-container {
+  display: flex;
+  gap: 20px; 
+  justify-content: space-between;
+}
+
+.nav-icon,
+.home-icon {
+  font-size: 30px;
+  color: #b7d4f3;
+  cursor: pointer;
+  transition: color 0.3s ease; 
+}
+
+.nav-icon:hover,
+.home-icon:hover {
+  color: #add0f6; 
+}
+

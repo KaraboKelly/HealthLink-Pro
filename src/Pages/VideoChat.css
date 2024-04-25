@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  #videos {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrollbars */
+  }
+  
+  .video-player {
+    background-color: black; /* Default background */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Ensure video fits well within the container */
+  }
+  
+  #user-2 {
+    display: none; /* Hide second user by default */
+  }
+  
+  .smallFrame {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    height: 170px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid #5f73e4;
+    box-shadow: 3px 3px 15px -1px rgba(0, 0, 0, 0.77);
+    z-index: 999; /* Ensure it appears on top */
+  }
+  
+  #controls {
+    position: fixed;
+    bottom: 20px; /* Align to the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%); /* Center controls horizontally */
+    display: flex; /* Use flexbox for controls */
+    gap: 1em; /* Space between controls */
+  }
+  
+  .control-container {
+    background-color: rgb(44, 120, 206); /* Default control color */
+    padding: 20px; /* Padding for clickable area */
+    display: flex;
+    border-radius: 50%; /* Circular controls */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Cursor changes to indicate clickability */
+  }
+  
+  .control-container img {
+    height: 30px; /* Default icon size */
+    width: 30px;
+  }
+  
+  #leave-btn {
+    background-color: rgb(218, 102, 118); /* Different color for leave button */
+  }
+  
+  @media screen and (max-width: 600px) {
+    .smallFrame {
+      height: 80px; /* Adjusted size for smaller screens */
+      width: 120px;
+    }
+  
+    .control-container {
+      padding: 10px; /* Smaller padding for controls on smaller screens */
+    }
+  
+    .control-container img {
+      height: 20px; /* Smaller icons */
+      width: 20px;
+    }
+  }
+  

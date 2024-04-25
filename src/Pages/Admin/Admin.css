@@ -1,0 +1,75 @@
+/* Add this CSS to your global stylesheet or create a new stylesheet for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 60px;
+    font-size: 22px;
+   
+  }
+  
+  thead {
+    background-color: #a6b2f4;
+    color: white;
+    height: 50px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 22px;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  /* pie chart */
+  .pie-chart-wrapper {
+    width: 100px; /* Set the width of the wrapper */
+    height: 100px;
+    height: auto; /* Set the height of the wrapper */
+  }
+  .chart-container {
+    width: 70%; /* Set the width of the chart container */
+    max-width: 600px; /* Set a maximum width if necessary */
+    margin-right: 10px; /* Add margin for spacing */
+  }
+   /* bar chart */
+   .specialistChart-container {
+    width: 100%; /* Set the width of the chart container */
+    max-width: 600px;
+    margin-right: 400px;
+  }
+  
+  .bar-chart-wrapper {
+    width: 100px;
+    height: auto;
+    max-width: 600px;
+    max-height: 600px;
+  
+  }
+  .line {
+    height: 5px;
+    background-color: rgb(18, 172, 223);
+    box-shadow: 0px 2px 4px rgba(173, 216, 230, 0.5);  
+    margin: 20px 0; 
+  }

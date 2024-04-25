@@ -1,0 +1,417 @@
+.container {
+  max-width: 800px;
+  width: 100%;
+  max-height: 1300px;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+}
+
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: #007BFF;
+}
+
+.container form {
+  position: relative;
+  margin-top: 20px;
+  min-height: 500px;
+}
+
+.container form .input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.container form .input-row label {
+  flex-basis: 48%; 
+}
+
+.container form label .details {
+  flex: 1;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.container form label input,
+.container form label select,
+.container form label textarea {
+  width: 100%;
+  height: 45px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 18px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.container form label input:focus,
+.container form label input:valid {
+  border-color: #007BFF;
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 100%;
+  }
+}
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+.textarea-like-input {
+  display: inline-block;
+}
+
+.textarea-like-input input {
+  height: auto;
+  min-height: 80px; 
+  resize: none;
+  overflow-y: hidden;
+}
+
+/*Specialist Sign in Form*/
+.form-container {
+  max-width: 1000px;
+  height: 600px;
+   margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-container {
+  flex: 1;
+  padding-left: 20px;
+}
+
+
+.signin-image {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  max-height: 100%;
+
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.form-container label {
+  margin-bottom: 8px;
+}
+
+.form-container input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  border-radius: 1000px;
+}
+
+.form-container button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+.logo-container {
+  margin-top: 20px; 
+  margin-bottom: 20px;
+}
+
+/* Messaging Container */
+.custom-chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 120%;
+  height: 300px;
+  overflow-y: auto;
+  position: relative; 
+  border: 1px solid #007BFF;
+  border-radius: 5px;
+}
+
+.custom-chat-header {
+  top: 0; 
+  position: sticky; 
+  padding: 10px;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-message-wrapper {
+  width: 100%;
+}
+.custom-message-container {
+  width: 80%;
+  max-width: 400px;
+  margin-top: 50px;
+  padding-top: 50px;
+  height: calc(100% - 50px);
+  overflow-y: auto; 
+}
+
+.custom-message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  max-width: 70%;
+}
+
+/* Style messages sent by the patient (right-aligned) */
+.custom-right {
+  background-color: #DCF8C6;
+  align-self: flex-end;
+}
+
+/* Style messages sent by the specialist (left-aligned) (replies)*/
+.custom-left {
+  background-color: #CBEAF9;
+  align-self: flex-start;
+}
+
+.custom-reply {
+  font-style: italic;
+}
+
+.custom-input-container {
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.custom-input-container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.custom-input-container button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+.custom-input-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Booking container */
+.booking-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.booking-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.booking-container form {
+  display: grid;
+  gap: 10px;
+}
+
+.booking-container label {
+  font-size: 16px;
+  color: #555;
+}
+
+.booking-container input,
+.booking-container select,
+.booking-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.booking-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-container button:hover {
+  background-color: #0056b3;
+}
+
+.booking-container p {
+  margin-top: 10px;
+  color: #007bff;
+  font-weight: bold;
+}
+.specialist-application-page {
+  background-color: #f0f8ff; 
+}
+/* Recieved Messages */
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  
+}
+
+
+.message-card {
+  background: #ffffff; 
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.message-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  
+  
+}
+
+/* Avatar styling */
+.avatar {
+  width: 80px; /* Adjusted to match the given size */
+  height: 80px;
+  border-radius: 50%; /* Circular avatar */
+  margin-right: 10px;
+}
+
+
+.message-info {
+  flex: 1;
+  
+}
+
+
+.sender {
+  font-weight: bold;
+  color: rgb(78, 75, 75);
+  
+}
+
+
+.content {
+  padding: 5px 0;
+  color: rgb(215, 209, 209); 
+}
+
+
+.time {
+  font-size: 0.8em;
+  color: #9f9e9e; 
+}
+
+
+.reply-card {
+  background: #e0f7fa;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-left: 120px; 
+}
+
+
+.reply-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.reply-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+
+.reply-button {
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reply-button:hover {
+  background-color: #0056b3; 
+}
+
+
+.empty-inbox {
+  text-align: center;
+  color: #777;
+  padding: 20px;
+}

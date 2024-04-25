@@ -1,0 +1,66 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: rgb(189, 186, 186);
+  }
+  
+
+  
+  .nav-logo {
+    width: 10px; /* Adjust the width as needed */
+    height: 10px;
+  }
+  
+  .search-container {
+     width: 30%;
+  }
+  
+  .search-input {
+    padding: 5px;
+    width: 100%;
+    margin-right: 80px;
+  }
+  
+  .search-icon {
+    cursor: pointer;
+  }
+  
+  .home-icon-container {
+    /* flex: 1; */ /* Uncomment if necessary */
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .home-icon {
+    cursor: pointer;
+    width: 60px;
+  }
+  .pie-chart-wrapper {
+    width: 20%; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+  }
+  /* no of patients */
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    text-align: center; 
+  }
+  
+  .card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 34px;
+   
+  }
